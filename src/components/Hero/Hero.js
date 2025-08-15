@@ -21,6 +21,7 @@ function Hero() {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <main>
       <Dropdown isOpen={isOpen} toggle={toggle} />
@@ -28,89 +29,68 @@ function Hero() {
       <HeroContainer>
         <HeroWrapper>
           <HeroLeft>
-            <ScrollAnimation animateIn="fadeIn" >
+            <ScrollAnimation animateIn="fadeIn">
               <TypeAnimation
                 cursor={false}
                 sequence={[
-                  'Hi, I\'m Pedro.',
-                  () => setShowSubtitle(true)
+                  "Hi, I'm Dharunpandi.",
+                  () => setShowSubtitle(true),
                 ]}
                 speed={{ type: "keyStrokeDelayInMs", value: 150 }}
                 wrapper="h1"
                 repeat={0}
               />
-              {showSubtitle &&
+              {showSubtitle && (
                 <TypeAnimation
                   cursor={true}
                   sequence={[
                     500,
-                    'A Full-Stack Developer.',
+                    "An LLM Developer.",
                     1000,
-                    'A BCIT graduate.',
-                    // 'I design and code beautifully simple things, and I love what I do.',
+                    "A Prompt Engineer.",
                     1000,
-                    'A problem solver.',
+                    "A Full-Stack Web Developer.",
                     1000,
-                    'An innovative thinker.',
+                    "A System Design Enthusiast.",
                     1000,
-                    'A....',
+                    "An LLM Fine-Tuner.",
                     1000,
-                    'A.... cool guy?',
+                    "A Machine Learning Engineer.",
                     1000,
-                    "Ok...",
+                    "A Computer Vision Enthusiast.",
                     1000,
-                    "Ok...  I'm running out of ideas...",
+                    "A Problem Solver.",
                     1000,
-                    "Uhh...",
+                    "A DSA Practitioner.",
                     1000,
-                    "Uhh... you can scroll down to see my projects now...",
-                    300,
                     () => setShowScrollDown(true),
-                    1000,
-                    "Seriously, my projects are really cool, go check them out!",
-                    1000,
-                    "You're uh...",
-                    1000,
-                    "You're uh... still here?",
-                    1000,
-                    "Ok, this has been fun, but I'm gonna restart the loop now...",
-                    // 1000,
-                    // "Or...",
-                    // 1000,
-                    // "Or... I could scroll you by force! Muahaha!",
-                    1000,
-                    "See ya! :)",
-                    500,
                   ]}
                   speed={50}
                   deletionSpeed={65}
                   wrapper="h5"
                   repeat={Infinity}
                 />
-              }
+              )}
             </ScrollAnimation>
-
           </HeroLeft>
+
           <HeroRight>
             <ScrollAnimation animateIn="fadeIn">
-              <Image
-                src="/man-svgrepo-com.svg"
-                alt="man-svgrepo"
-              />
+              <Image src="/man-svgrepo-com.svg" alt="man-svgrepo" />
             </ScrollAnimation>
           </HeroRight>
         </HeroWrapper>
-        {showScrollDown &&<ScrollAnimation animateIn="flipInX" offset={0}>
-        <ScrollDown to="projects" id="scrollDown">
-          <ScrollLink>
-            Scroll down
-            <img
-              src="/scroll-down.svg"
-              alt="scroll-down"
-            />
-          </ScrollLink>
-        </ScrollDown>
-        </ScrollAnimation>}
+
+        {showScrollDown && (
+          <ScrollAnimation animateIn="flipInX" offset={0}>
+            <ScrollDown to="projects" id="scrollDown">
+              <ScrollLink>
+                Scroll down
+                <img src="/scroll-down.svg" alt="scroll-down" />
+              </ScrollLink>
+            </ScrollDown>
+          </ScrollAnimation>
+        )}
       </HeroContainer>
     </main>
   );

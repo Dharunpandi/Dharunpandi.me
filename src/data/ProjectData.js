@@ -1,55 +1,56 @@
 // --------------------------------------- Project List
 export const ProjectList = [
   {
-    img: "/ykte-feature-graphic.png",
-    title: "YouKnowTheEnding",
+    img: "/negotiaton-chatbot.png",
+    title: "Negotia - sleek and professional",
     description:
-      "A cross-platform mobile game (in closed testing) where players try to find the missing pieces of a story.",
-    tech_stack: ["React Native", "Google Cloud", "NextJs", "TailwindCSS"],
-    github_url: "",
-    demo_url: "https://youknowtheending.net/",
+      "A conversational AI that negotiates prices with customers and rewards positive sentiment with tailored discounts.",
+    tech_stack: ["Flask", "Fine-tuned LLaMA 2-7B Chat Model", "React"],
+    github_url: "https://github.com/Dharunpandi/negotiation_bot",
+    demo_url: "https://github.com/Dharunpandi/negotiation_bot",
   },
   {
-    img: "/renr-responsive.png",
-    title: "RENR Safety App",
+    img: "/sql-data-agent.png",
+    title: "QueryVision – turning queries into visuals.",
     description:
-      "A safety application for the Renewable Resources Dept. of BCIT",
-    tech_stack: ["React", "Firebase"],
-    github_url: "",
-    demo_url: "https://renr-bcit.web.app/",
+      "SQL Data Agent – Converts plain English queries into optimized SQL and presents results with visualizations, eliminating manual SQL and BI setup.",
+    tech_stack: ["React", "Express Js","Node js", "Supabase","LLM"],
+    github_url: "https://github.com/Dharunpandi/gemini_sql",
+    demo_url: "https://github.com/Dharunpandi/gemini_sql",
   },
   {
-    img: "/mymind-responsive.png",
-    title: "MyMind",
+    img: "/custom-ner.png",
+    title: "Custom Entity Tagger",
     description:
-      "An app where users can purchase online therapy sessions and chat with their therapists.",
-    tech_stack: ["HTML", "CSS", "NodeJs", "MongoDB", "SocketIo"],
-    github_url: "https://github.com/salesp07/MyMind---Copy",
-    demo_url: "https://mymindweb.vercel.app/",
+      "Custom NER – Identifies and classifies domain-specific entities that general NER models often miss or misclassify.",
+    tech_stack:["tensorflow", "scikit-learn","Recurrent Neural Networks (RNN)"],
+    github_url: "https://github.com/Dharunpandi/custom_NER",
+    demo_url: "https://github.com/Dharunpandi/custom_NER",
   },
   {
-    img: "/pokedex-responsive.png",
-    title: "Pokedex",
+    img: "/plant-disease.png",
+    title: "Plantorex – Plant Disease Predictor",
     description:
-      "A pokedex app that displays pokemon data, plays OSTs and makes pokemons dance.",
-    tech_stack: ["ReactJs", "NodeJs", "MongoDB"],
-    github_url: "https://github.com/salesp07/Pokedex-ReactApp",
-    demo_url: "https://pokedex-salesp07.netlify.app/",
+      "A plant-care app that identifies crop diseases from leaf photos and instantly suggests science-backed remedies and prevention tips.",
+    tech_stack: ["ReactJs", "NodeJs", "MongoDB","Deep Learning","Machine Learning"],
+    github_url: "https://github.com/Dharunpandi/Plant_Disease_Predictor-Using-DL-ML-Techniques",
+    demo_url: "https://github.com/Dharunpandi/Plant_Disease_Predictor-Using-DL-ML-Techniques",
   },
   {
-    img: "/jobDetect.png",
-    title: "JobDetect",
+    img: "/youtube-comment-analyzer.png",
+    title: "Youtube Comment Analayzer",
     description:
-      "An app to detect if a job posting is a scam or not using its description.",
+      "An app that analyzes YouTube video comments to detect sentiment (positive, negative, neutral) and provides actionable feedback to creators on how to improve engagement and audience satisfaction.",
     tech_stack: ["Python", "Flask", "NodeJs", "MongoDB"],
-    github_url: "https://github.com/salesp07/JobDetectNode",
-    demo_url: "https://jobdetective.onrender.com/",
+    github_url: "https://github.com/Dharunpandi/Youtube_comments_analyser",
+    demo_url: "https://github.com/Dharunpandi/Youtube_comments_analyser",
   },
 ];
 
 // --------------------------------------- Skills
 
 export const stackList = [
+  // Web & App Development Skills
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
     name: "HTML",
@@ -66,29 +67,15 @@ export const stackList = [
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
     name: "ReactJS",
   },
-  {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
-    name: "NextJs",
-  },
-  {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
-    name: "Typescript",
-  },
+
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
     name: "Git",
   },
-  {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
-    name: "React Native",
-  },
+
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
     name: "NodeJS",
-  },
-  {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg",
-    name: "Firebase",
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
@@ -134,4 +121,44 @@ export const stackList = [
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
     name: "VS Code",
   },
+
+  // AI & Data Science Tools
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg",
+    name: "PyTorch",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg",
+    name: "TensorFlow",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg",
+    name: "OpenCV",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg",
+    name: "NumPy",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg",
+    name: "Pandas",
+  },
+  
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg",
+    name: "Jupyter Notebook",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg",
+    name: "FastAPI",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
+    name: "Docker",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg",
+    name: "Google Cloud",
+  },
+  
 ];

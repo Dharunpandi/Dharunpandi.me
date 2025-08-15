@@ -23,20 +23,20 @@ function About() {
         </ScrollAnimation>
           <div className="AboutBio">
             <ScrollAnimation animateIn="fadeInLeft">
-            Hello! My name is <strong>Pedro Muniz</strong>. I'm originally from Brazil and have been living in Canada for the past three years. During my time here, I gained valuable experience through various entry-level positions, which greatly enhanced my work ethic, communication skills, and adaptability.
+            Hello! My name is <strong>Dharunpandi </strong>. I’m from India and a recent graduate eager to start my professional journey. My academic projects and self-learning have strengthened my problem-solving, adaptability, and communication skills, preparing me to contribute effectively in a dynamic work environment.
+
             </ScrollAnimation>
 
             <br /><br />
             
             <ScrollAnimation animateIn="fadeInLeft">
-            My journey into the world of technology began with a strong passion for problem-solving, which led me to pursue the Computer Systems Technology program. Despite its challenges, I remained determined and forged lasting friendships that supported me throughout this demanding program.
-            Throughout my studies at BCIT, I had the opportunity to engage in fascinating projects. Notably, I contributed to the development of the RENR Safety App and MyMind, projects that garnered recognition from my colleagues, instructors, and clients alike.
+           I bring a strong passion for problem-solving, resilience in challenging environments, and the ability to collaborate effectively with diverse teams. My technical expertise and commitment to continuous learning enable me to deliver innovative, high-quality solutions that add measurable value to any organization.
             </ScrollAnimation>
 
             <br /><br />
 
             <ScrollAnimation animateIn="fadeInLeft">
-              Working collaboratively within a team towards a shared objective has been an incredibly rewarding and unique experience for me. I am eager to continue exploring exciting projects in the future, with a particular interest in web development and cross-platform mobile development.
+              Working collaboratively within a team towards a shared goal has been a highly rewarding experience for me. I am eager to continue exploring innovative projects in the future, with a particular interest in web development, AI-based solutions, and cross-platform mobile development.
               <div className="tagline2">
                 I have become confident using the following technologies:
               </div>
