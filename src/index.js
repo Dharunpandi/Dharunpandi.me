@@ -6,11 +6,15 @@ import App from "./App";
 
 // Initialize Sentry before rendering the app
 Sentry.init({
-  dsn: process.env.REACT_APP_SENTRY_DSN, // Add this in Vercel Environment Variables
-  tracesSampleRate: 1.0,
+  dsn: "https://674578bb53f63cc263e1b420aa5efaaf@o4510979721396224.ingest.us.sentry.io/4510980882563072",
+  sendDefaultPii: true
 });
 
-ReactDOM.render(
-  <App />,
-  document.getElementById("root")
+const container = document.getElementById("app");
+const root = createRoot(container);
+
+root.render(
+  <Sentry.ErrorBoundary fallback={"An error has occurred"}>
+    <App />
+  </Sentry.ErrorBoundary>
 );
