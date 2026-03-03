@@ -1,5 +1,5 @@
 import React from "react";
-import { createRoot } from "react-dom/client"; // ✅ must import createRoot from react-dom/client
+import ReactDOM from "react-dom";
 import * as Sentry from "@sentry/react";
 import "./index.css";
 import App from "./App";
@@ -10,11 +10,9 @@ Sentry.init({
   sendDefaultPii: true
 });
 
-const container = document.getElementById("app");
-const root = createRoot(container);
-
-root.render(
+ReactDOM.render(
   <Sentry.ErrorBoundary fallback={<div>An error has occurred</div>}>
     <App />
-  </Sentry.ErrorBoundary>
+  </Sentry.ErrorBoundary>,
+  document.getElementById("app")
 );
