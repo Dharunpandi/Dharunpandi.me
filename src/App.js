@@ -3,20 +3,18 @@ import Home from "./pages/Home";
 import * as Sentry from "@sentry/react";
 
 function App() {
-  // Function to safely send a test error to Sentry
+
   const sendTestError = () => {
-    Sentry.captureException(new Error("Test error from App.js"));
-    alert("Sentry test error sent!");
+    Sentry.captureMessage("Test message from App.js");
+    alert("Sentry test message sent!");
   };
 
   return (
     <div>
-      {/* Your Home component */}
       <Home />
 
-      {/* Safe button to test Sentry */}
-      <button 
-        onClick={sendTestError} 
+      <button
+        onClick={sendTestError}
         style={{
           marginTop: "20px",
           padding: "10px 15px",
@@ -27,7 +25,7 @@ function App() {
           cursor: "pointer"
         }}
       >
-        Send Test Error to Sentry
+        Send Test Message to Sentry
       </button>
     </div>
   );
